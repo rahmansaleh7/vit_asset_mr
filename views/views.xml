@@ -1,0 +1,28 @@
+<odoo>
+  <data>
+      <record id="view_picking_form_new" model="ir.ui.view">
+        <field name="name">view_picking_form_new</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+
+        <field name="arch" type="xml">
+          <xpath expr="//notebook/page[2]/field/tree/field[@name='product_id']" position="after">
+            <field name="asset_cat"/>
+          </xpath>
+        </field>
+      </record>
+
+    <!-- <record model="ir.ui.view" id="asset_tree">
+      <field name="name">asset_tree</field>
+      <field name="model">stock.picking</field>
+      <field name="inherit_id" ref="stock.vpicktree" />
+
+      <field name="arch" type="xml">
+        <field name="request_id" position="after">
+          <field name="asset_cat" />
+        </field>
+      </field>
+    </record> -->
+    
+  </data>
+</odoo>
