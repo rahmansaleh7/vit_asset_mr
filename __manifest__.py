@@ -23,13 +23,15 @@
                 'base',
                 'stock',
                 'om_account_accountant',
+                'om_account_asset',
                 'vit_unit_location',
+                # 'vit_asset',
                 ],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'wizard/create_assets.xml',
+        # 'wizard/create_assets.xml',
         'views/views.xml',
         'views/templates.xml',
     ],

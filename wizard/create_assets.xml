@@ -1,22 +1,31 @@
 <odoo>
     <data>
 
-        <record model='ir.actions.act_window' id='create_wizard_action'>
-        <field name='name'>Add Wizard</field>
-        <field name='res_model'>vit_assets_mrp.createassets.assets</field>
-        <field name='view_type'>form</field>
-        <field name='view_mode'>form</field>
-        <field name='target'>new</field>
+        <record id="view_create_asset" model="ir.ui.view">
+            <field name="name">create_asset_stock</field>
+            <field name="model">create.asset.stock</field>
+            <field name="arch" type="xml">
+                <form string="Create Asset">
+                    <group>
+                        <p>
+                            Banyak orang tidak menyadari bahwa
+                            <!-- You have processed less products than the initial demand. -->
+                        </p><p class="text-muted">
+                            Saya Adalah
+                            <!-- Create a backorder if you expect to process the remaining
+                            products later. Do not create a backorder if you will not
+                            process the remaining products. -->
+                        </p>
+                    </group>
+                    
+                    <footer>
+                        <button name="process" string="Create Backorder" type="object" class="oe_highlight"/>
+                        <button name="process_cancel_backorder" string="No Backorder" type="object" class="btn-primary"/>
+                        <button string="_Cancel" class="btn-secondary" special="cancel" />
+                    </footer>
+                </form>
+            </field>
         </record>
-
-        <menuitem
-            string='Untuk Wizard'
-            parent='stock.menu_stock_root'
-            id='create_wizard_menu'
-            sequence='90'
-            action='create_wizard_action' 
-        />
+        
     </data>
 </odoo>
-
-<!-- groups="group_stock_manager,group_stock_user" -->
