@@ -25,6 +25,7 @@
                 'om_account_accountant',
                 'om_account_asset',
                 'vit_unit_location',
+                # 'hr.departement',
                 # 'vit_asset',
                 ],
 
