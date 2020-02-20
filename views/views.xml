@@ -11,18 +11,6 @@
           </xpath>
         </field>
       </record>
-
-    <!-- <record model="ir.ui.view" id="asset_tree">
-      <field name="name">asset_tree</field>
-      <field name="model">stock.picking</field>
-      <field name="inherit_id" ref="stock.vpicktree" />
-
-      <field name="arch" type="xml">
-        <field name="request_id" position="after">
-          <field name="asset_cat" />
-        </field>
-      </field>
-    </record> -->
     
   </data>
 </odoo>

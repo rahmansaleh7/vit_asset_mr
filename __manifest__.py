@@ -3,10 +3,10 @@
     'name': "vit_asset_mr",
 
     'summary': """
-                Modul Penambahan Create Asset dan Asset Category""",
+                Modul Penambahan Create Asset di stock dan Asset Category""",
 
     'description': """
-        Long description of module's purpose
+        
     """,
 
     'author': "Iqbal Abdurrahman",
@@ -26,13 +26,11 @@
                 'om_account_asset',
                 'vit_unit_location',
                 # 'hr.departement',
-                # 'vit_asset',
                 ],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        # 'wizard/create_assets.xml',
         'views/views.xml',
         'views/templates.xml',
     ],
