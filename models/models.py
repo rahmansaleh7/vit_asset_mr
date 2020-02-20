@@ -24,8 +24,8 @@ class ButtonValidate(models.Model):
                 'date_first_depreciation' : 'manual',
                 'first_depreciation_manual_date' : obj.date_expected,
                 'value': obj.product_id.standard_price * obj.product_uom_qty ,
-                'account_analytic_id' : self.unit_id.id,
-                # 'analytic_tag_ids' : self.analytic_tag_ids,
+                'unit_id' : self.unit_id.id,
+                'analytic_tag_ids_l' : self.analytic_tag_ids.id,
                 
             }
             self.env['account.asset.asset'].create(vals)
